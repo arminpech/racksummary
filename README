@@ -1,0 +1,15 @@
+README of RackSummary
+=====================
+Last update: 2011-05-25
+
+
+RackSummary Project
+
+This program can collect unit informations from different (TODO) data sources
+and creates a PDF output which displays the mounting positions of
+units/systems in a rack.
+
+Project homepage: http://projects.arminpech.de/racksummary (coming soon!)
+
+Licence: GNU General Public License 3
+         (see LICENCE file or http://www.gnu.org/licenses/)
