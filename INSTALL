@@ -6,7 +6,7 @@ Last update: 2011-05-25
 1. Get the newest php sources of RackSummary
 mkdir racksummary;cd racksummary
 git init
-https://arminpech@github.com/arminpech/racksummary.git
+git pull https://arminpech@github.com/arminpech/racksummary.git
 
 2. Download required APIs
 2.1. FPDF for PDF creation
