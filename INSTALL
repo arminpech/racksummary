@@ -1,0 +1,36 @@
+INSTALL instructions of RackSummary
+===================================
+Last update: 2011-05-25
+
+
+1. Get the newest php sources of RackSummary
+mkdir racksummary;cd racksummary
+git init
+https://arminpech@github.com/arminpech/racksummary.git
+
+2. Download required APIs
+2.1. FPDF for PDF creation
+cd bin
+wget "http://fpdf.org/en/dl.php?v=16&f=tgz" -O fpdf16.tgz
+tar -xzf fpdf16.tgz fpdf16/fpdf.php fpdf16/font
+ln -s fpdf16 fpdf
+rm fpdf16.tgz
+
+2.2. php-excel-reader for parsing excel files
+cd modules/collector
+wget http://php-excel-reader.googlecode.com/files/php-excel-reader-2.21.zip
+mkdir php-excel-reader-2.21
+unzip -d php-excel-reader-2.21 php-excel-reader-2.21.zip excel_reader2.php
+ln -s php-excel-reader-2.21 php-excel-reader
+rm php-excel-reader-2.21.zip
+
+2.3. Installation finished :)
+cd ../../..
+
+3. Test the application!
+chmod +x RackSummary.cli.php && ./RackSummary.cli.php
+
+4. Inspect the results in var/rack.pdf
+
+5. Put you own production data into var/ and customize the script RackSummary.cli.php
+   or use the classes RackPrinter and RackCollector on your own.
